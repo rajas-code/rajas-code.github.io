@@ -1,0 +1,266 @@
+/* Reset default margins */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* Navbar background */
+.navbar {
+  background: #111827;      /* dark navy/black */
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo (your name) */
+.logo {
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: #f9fafb;           /* light text for dark background */
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Social icons */
+.social-icons a {
+  margin-left: 12px;
+  color: #e5e7eb;           /* light gray icons */
+  font-size: 1.3rem;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #60a5fa;           /* light blue hover */
+}
+
+/* Navigation links */
+.nav-links li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.nav-links a {
+  color: #e5e7eb;           /* light link text */
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #60a5fa;           /* hover blue */
+}
+
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  background: url("background.jpg") no-repeat center center/cover; /* full background image */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4); /* dark overlay for readability */
+  z-index: 0;
+}
+
+.hero * {
+  position: relative;
+  z-index: 1; /* keeps text above overlay */
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.profile-img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  border: 2px solid white;
+  object-fit: cover;   /* prevents stretching */
+  object-position: top ; /* centers the face */
+}
+
+.highlight {
+  color: #ffdd57;
+}
+
+/* Sections */
+.section {
+  padding: 60px 10%;
+  text-align: center;
+}
+
+.alt-bg {
+  background: #f7f7f7;
+}
+
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.section p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* Projects Grid */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.project-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Contact Form */
+.contact-form {
+  max-width: 500px;
+  margin: 20px auto 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin: 10px 0;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.contact-form button {
+  padding: 12px;
+  background: #00adb5;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contact-form button:hover {
+  background: #007a80;
+}
+
+/* Footer */
+footer {
+  background: #222;
+  color: #ddd;
+  text-align: center;
+  padding: 15px;
+}
+
+.image-credit {
+  position: absolute;
+  bottom: 10px;
+  right: 15px;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.7);
+  background: rgba(0, 0, 0, 0.4);
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-style: italic;
+}
+
+#contact {
+  text-align: center;       /* center-align text */
+  padding: 40px 20px;       /* breathing space */
+}
+
+#contact h2 {
+  margin-bottom: 20px;
+}
+
+#contact a {
+  display: inline-block;    /* allows spacing without full-width */
+  margin: 8px 12px;
+  color: #667eea;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1em;
+  transition: color 0.3s ease;
+}
+
+#contact a:hover {
+  color: #764ba2;           /* nice hover effect */
+  text-decoration: underline;
+}
+
+
+/* About Section */
+#about {
+  padding: 60px 20px;
+  background: #f9fafb;
+  text-align: center; /* keeps the section title centered */
+}
+
+#about h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #1f2937;
+}
+
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.about-img img {
+  width: 250px;
+  height: auto;
+  border-radius: 12px;
+  border: 3px solid #667eea;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.15);
+}
+
+.about-text {
+  max-width: 600px;
+  text-align: left;        /* ✅ left-align text for readability */
+  font-size: 1.1rem;
+  line-height: 1.7;        /* more breathing space between lines */
+  color: #374151;          /* softer gray for easier reading */
+}
+
+.about-text p {
+  margin-bottom: 16px;
+}
+}
