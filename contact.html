@@ -3,30 +3,60 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact - My Website</title>
+  <meta name="description" content="Contact Rajapandi Nadar about physics research, lectures, and collaboration.">
+  <title>Contact | Rajapandi Nadar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Contact Me</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="projects.html">Projects</a>
-      <a href="contact.html">Contact</a>
+  <header class="site-header">
+    <nav class="navbar page-width" aria-label="Main navigation">
+      <a class="logo" href="index.html" aria-label="Rajapandi Nadar, home"><span class="logo-mark">RN</span><span>Rajapandi Nadar<small>Physics research &amp; education</small></span></a>
+      <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-controls="site-navigation" aria-expanded="false"><i class="fa-solid fa-bars" aria-hidden="true"></i></button>
+      <div class="nav-right" id="site-navigation">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="project.html">Work</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+        <a class="nav-cv" href="cv.pdf" target="_blank" rel="noopener">View CV <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+      </div>
     </nav>
   </header>
 
-  <main>
-    <h2>Get in Touch</h2>
-    <p>Email: yourname@example.com</p>
-    <p>Socials: Add your links here</p>
+  <main class="inner-page page-width">
+    <section class="inner-hero" aria-labelledby="contact-title">
+      <p class="kicker"><span></span> 04 / Contact</p>
+      <h1 id="contact-title">Bring a good<br><em>question.</em></h1>
+    </section>
+
+    <section class="contact-grid">
+      <div>
+        <p class="lead">Research question, lecture idea, or a shared fascination with something in the sky? My inbox is open.</p>
+        <a class="contact-email" href="mailto:rajapandi.nadar@xaviers.edu.in">rajapandi.nadar@xaviers.edu.in <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+      </div>
+      <div class="contact-details">
+        <p><span>Based in</span>Mumbai, India</p>
+        <p><span>Also on</span><a href="https://www.linkedin.com/in/rajapandi-nadar" target="_blank" rel="noopener noreferrer">LinkedIn <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a></p>
+        <p><span>Research ID</span><a href="https://orcid.org/0009-0006-9067-1132" target="_blank" rel="noopener noreferrer">ORCID <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a></p>
+        <p><span>Writing</span><a href="https://rajapandi01.blogspot.com/" target="_blank" rel="noopener noreferrer">Blog <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a></p>
+      </div>
+    </section>
   </main>
 
-  <footer>
-    <p>© 2025 [Your Name]. All rights reserved.</p>
+  <footer class="site-footer page-width">
+    <p>© <span data-current-year>2026</span> Rajapandi Nadar</p>
+    <div class="footer-socials" aria-label="Social links">
+      <a href="https://github.com/rajas-code" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
+      <a href="https://orcid.org/0009-0006-9067-1132" target="_blank" rel="noopener noreferrer" aria-label="ORCID"><i class="fa-brands fa-orcid" aria-hidden="true"></i></a>
+      <a href="https://www.linkedin.com/in/rajapandi-nadar" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+      <a href="https://rajapandi01.blogspot.com/" target="_blank" rel="noopener noreferrer" aria-label="Blog"><i class="fa-solid fa-blog" aria-hidden="true"></i></a>
+    </div>
+    <p>Built with curiosity.</p>
   </footer>
-
   <script src="script.js"></script>
 </body>
 </html>

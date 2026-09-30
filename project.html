@@ -3,54 +3,77 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projects — Rajapandi</title>
+  <meta name="description" content="Selected research and teaching work by Rajapandi Nadar.">
+  <title>Work | Rajapandi Nadar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-  <!-- Header / Navbar -->
-  <header>
-    <nav class="navbar">
-      <div class="logo">
-        Rajapandi
-        <span class="social-icons">
-          <a href="https://github.com/rajas-code" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-          <a href="https://orcid.org/0009-0006-9067-1132" target="_blank" aria-label="ORCID"><i class="fab fa-orcid"></i></a>
-          <a href="https://www.linkedin.com/in/rajapandi-nadar" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-        </span>
+  <header class="site-header">
+    <nav class="navbar page-width" aria-label="Main navigation">
+      <a class="logo" href="index.html" aria-label="Rajapandi Nadar, home"><span class="logo-mark">RN</span><span>Rajapandi Nadar<small>Physics research &amp; education</small></span></a>
+      <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-controls="site-navigation" aria-expanded="false"><i class="fa-solid fa-bars" aria-hidden="true"></i></button>
+      <div class="nav-right" id="site-navigation">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="project.html" aria-current="page">Work</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <a class="nav-cv" href="cv.pdf" target="_blank" rel="noopener">View CV <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
       </div>
-      <ul class="nav-links">
-        <li><a href="index.html#home">Home</a></li>
-        <li><a href="index.html#about">About</a></li>
-        <li><a href="projects.html" aria-current="page">Projects</a></li>
-        <li><a href="index.html#contact">Contact</a></li>
-        <li><a href="cv.pdf" target="_blank">CV</a></li>
-      </ul>
     </nav>
   </header>
 
-  <!-- Projects Section -->
-  <section id="projects" class="section alt-bg">
-    <h2>My Projects</h2>
-    <div class="projects-grid">
-      <div class="project-card">
-        <h3>Project 1</h3>
-        <p>A short description of your project goes here.</p>
-      </div>
-      <div class="project-card">
-        <h3>Project 2</h3>
-        <p>Another project description goes here.</p>
-      </div>
-      <div class="project-card">
-        <h3>Project 3</h3>
-        <p>Yet another cool project you’ve built.</p>
-      </div>
-    </div>
-  </section>
+  <main class="inner-page page-width">
+    <section class="inner-hero" aria-labelledby="work-title">
+      <p class="kicker"><span></span> 03 / Work</p>
+      <h1 id="work-title">Questions worth<br><em>following.</em></h1>
+    </section>
 
-  <!-- Footer -->
-  <footer>
-    <p>© 2025 Rajapandi | Built with HTML JAVA CSS</p>
+    <section class="project-list" aria-label="Selected work">
+      <article class="project-row">
+        <span class="project-number">01</span>
+        <div>
+          <p class="eyebrow">High-energy astrophysics</p>
+          <h2>SXP 5.05</h2>
+          <p>Investigating a Be/X-ray binary system through timing behaviour, outbursts, and telescope data.</p>
+        </div>
+        <a href="https://ui.adsabs.harvard.edu/search/q=title%3A%22SXP%205.05%22&amp;sort=date%20desc%2C%20bibcode%20desc" target="_blank" rel="noopener noreferrer" aria-label="View research on SXP 5.05"><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+      </article>
+      <article class="project-row">
+        <span class="project-number">02</span>
+        <div>
+          <p class="eyebrow">Astrophysics research</p>
+          <h2>Pulsar timing &amp; binary evolution</h2>
+          <p>Studying compact stellar systems, their changing rhythms, and the physical processes that shape them.</p>
+        </div>
+        <a href="contact.html" aria-label="Contact Rajapandi about research"><i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+      </article>
+      <article class="project-row">
+        <span class="project-number">03</span>
+        <div>
+          <p class="eyebrow">Physics education</p>
+          <h2>Physics, made legible</h2>
+          <p>Lectures and learning experiences that turn difficult ideas into clear, memorable stories for students.</p>
+        </div>
+        <a href="contact.html" aria-label="Contact Rajapandi about teaching"><i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer page-width">
+    <p>© <span data-current-year>2026</span> Rajapandi Nadar</p>
+    <div class="footer-socials" aria-label="Social links">
+      <a href="https://github.com/rajas-code" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
+      <a href="https://orcid.org/0009-0006-9067-1132" target="_blank" rel="noopener noreferrer" aria-label="ORCID"><i class="fa-brands fa-orcid" aria-hidden="true"></i></a>
+      <a href="https://www.linkedin.com/in/rajapandi-nadar" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+      <a href="https://rajapandi01.blogspot.com/" target="_blank" rel="noopener noreferrer" aria-label="Blog"><i class="fa-solid fa-blog" aria-hidden="true"></i></a>
+    </div>
+    <p>Built with curiosity.</p>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>

@@ -3,30 +3,68 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About - My Website</title>
+  <meta name="description" content="Learn about Rajapandi Nadar, a physics researcher and teacher from Mumbai.">
+  <title>About | Rajapandi Nadar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>About Me</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="projects.html">Projects</a>
-      <a href="contact.html">Contact</a>
+  <header class="site-header">
+    <nav class="navbar page-width" aria-label="Main navigation">
+      <a class="logo" href="index.html" aria-label="Rajapandi Nadar, home"><span class="logo-mark">RN</span><span>Rajapandi Nadar<small>Physics research &amp; education</small></span></a>
+      <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-controls="site-navigation" aria-expanded="false"><i class="fa-solid fa-bars" aria-hidden="true"></i></button>
+      <div class="nav-right" id="site-navigation">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" aria-current="page">About</a></li>
+          <li><a href="project.html">Work</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <a class="nav-cv" href="cv.pdf" target="_blank" rel="noopener">View CV <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+      </div>
     </nav>
   </header>
 
-  <main>
-    <h2>Who am I?</h2>
-    <p>I’m [Your Name], and this is my personal website.</p>
-    <p>Here you can add details like your background, hobbies, and skills.</p>
+  <main class="inner-page page-width">
+    <section class="inner-hero" aria-labelledby="about-title">
+      <p class="kicker"><span></span> 02 / About</p>
+      <h1 id="about-title">The person behind<br>the <em>questions.</em></h1>
+    </section>
+
+    <section class="content-grid">
+      <div class="about-photo-wrap"><img class="about-photo" src="me1.jpeg" alt="Rajapandi Nadar in Mumbai"></div>
+      <div class="inner-copy">
+        <p class="lead"><strong>Hi, I’m Rajapandi Nadar.</strong> I’m a physics researcher and teacher from Mumbai, fascinated by the universe’s most extreme phenomena.</p>
+        <p>My work often revolves around pulsars, X-ray binaries, and the occasional gravitational-wave puzzle: cosmic clocks and fireworks that keep astrophysics exciting.</p>
+        <p>I have carried out research projects at <strong>TIFR</strong> and <strong>St. Xavier’s College</strong>, exploring pulsar timing, binary evolution, and high-energy telescope data.</p>
+        <p>Alongside research, I conduct lectures in physics for college and high-school students, sharing concepts in ways that make science approachable and engaging.</p>
+      </div>
+    </section>
+
+    <section class="quote-panel" aria-label="Approach to research and teaching">
+      <p>Questions are where both research and good teaching begin.</p>
+      <span>Researcher, educator, lifelong learner</span>
+    </section>
+
+    <section class="principles" aria-label="Three approaches">
+      <article class="principle"><p class="eyebrow">01 / Research</p><h2>Follow the signal</h2><p>Look closely at the patterns that reveal how extreme stellar systems behave.</p></article>
+      <article class="principle"><p class="eyebrow">02 / Teaching</p><h2>Make room for wonder</h2><p>Build explanations that are rigorous, clear, and inviting to explore.</p></article>
+      <article class="principle"><p class="eyebrow">03 / Collaboration</p><h2>Share the question</h2><p>Good science grows through conversation, curiosity, and careful work.</p></article>
+    </section>
   </main>
 
-  <footer>
-    <p>© 2025 [Your Name]. All rights reserved.</p>
+  <footer class="site-footer page-width">
+    <p>© <span data-current-year>2026</span> Rajapandi Nadar</p>
+    <div class="footer-socials" aria-label="Social links">
+      <a href="https://github.com/rajas-code" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
+      <a href="https://orcid.org/0009-0006-9067-1132" target="_blank" rel="noopener noreferrer" aria-label="ORCID"><i class="fa-brands fa-orcid" aria-hidden="true"></i></a>
+      <a href="https://www.linkedin.com/in/rajapandi-nadar" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+      <a href="https://rajapandi01.blogspot.com/" target="_blank" rel="noopener noreferrer" aria-label="Blog"><i class="fa-solid fa-blog" aria-hidden="true"></i></a>
+    </div>
+    <p>Built with curiosity.</p>
   </footer>
-
   <script src="script.js"></script>
 </body>
 </html>

@@ -1,90 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Personal Website</title>
+  <meta name="description" content="Rajapandi Nadar is a physics researcher and teacher based in Mumbai, India.">
+  <title>Rajapandi Nadar | Physics research &amp; education</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Header / Navbar -->
-  <header>
-    <nav class="navbar">
-      <div class="logo">
-        Rajapandi
-        <span class="social-icons">
-          <a href="https://github.com/rajas-code" target="_blank" aria-label="GitHub">
-            <i class="fab fa-github"></i>
-          </a>
-          <a href="https://orcid.org/0009-0006-9067-1132" target="_blank" aria-label="ORCID">
-            <i class="fab fa-orcid"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/rajapandi-nadar" target="_blank" aria-label="LinkedIn">
-            <i class="fab fa-linkedin"></i>
-          </a>
-          <a href="https://rajapandi01.blogspot.com/" target="_blank" aria-label="Blog">
-            <i class="fas fa-blog"></i>
-          </a>
-        </span>
+  <header class="site-header">
+    <nav class="navbar page-width" aria-label="Main navigation">
+      <a class="logo" href="index.html" aria-label="Rajapandi Nadar, home">
+        <span class="logo-mark">RN</span>
+        <span>Rajapandi Nadar<small>Physics research &amp; education</small></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-controls="site-navigation" aria-expanded="false"><i class="fa-solid fa-bars" aria-hidden="true"></i></button>
+      <div class="nav-right" id="site-navigation">
+        <ul class="nav-links">
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="project.html">Work</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <a class="nav-cv" href="cv.pdf" target="_blank" rel="noopener">View CV <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
       </div>
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="cv.pdf" target="_blank">CV</a></li>
-      </ul>
     </nav>
   </header>
 
-  <!-- Hero Section -->
-  <section id="home" class="hero">
-    <div class="hero-content">
-      <img src="me.jpeg" alt="My Photo" class="profile-img">
-      <h1>Hello, I'm <span class="highlight">Rajapandi</span></h1>
-      <p>Welcome to my personal website ✨</p>
-    </div>
-    <div class="image-credit">
-  	Image credit: NASA-James Webb Space Telescope
-     </div>
-  </section>
-  
-  <section id="about">
-   
-    <div class="about-container">
-      <div class="about-img">
-        <img src="RAJE2671.JPG" alt="My Photo">
+  <main>
+    <section class="hero page-width" id="home" aria-labelledby="home-title">
+      <div class="hero-copy">
+        <p class="kicker"><span></span> Physics researcher &amp; educator</p>
+        <h1 id="home-title">Following the universe’s <em>best questions.</em></h1>
+        <p class="hero-intro">I study pulsars, X-ray binaries, and the signals hidden in high-energy telescope data. I also teach physics in ways that make room for curiosity.</p>
+        <div class="hero-actions">
+          <a class="button button-dark" href="#research">Explore selected work <i class="fa-solid fa-arrow-down" aria-hidden="true"></i></a>
+          <a class="text-link" href="contact.html">Start a conversation <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+        </div>
       </div>
-     <div class="about-text">
-     	      <h2>About me</h2>
-<p><strong>Hi — I’m Rajapandi Nadar.</strong> I’m a physics researcher and teacher from Mumbai, fascinated by the universe’s most extreme phenomena. My work often revolves around pulsars, X-ray binaries, and the occasional gravitational-wave puzzle — cosmic clocks and fireworks that keep astrophysics exciting.</p>
+      <div class="hero-portrait" aria-label="Portrait of Rajapandi Nadar">
+        <div class="portrait-orbit" aria-hidden="true"></div>
+        <div class="portrait-backdrop" aria-hidden="true"></div>
+        <div class="portrait-frame"><img src="RAJE2671.JPG" alt="Rajapandi Nadar"></div>
+        <div class="hero-stamp" aria-hidden="true">LOOK<br>CLOSER</div>
+        <div class="portrait-note">Based in<br><strong>Mumbai, India</strong></div>
+      </div>
+    </section>
 
-<p>I’ve carried out research projects at <strong>TIFR</strong> and <strong>St. Xavier’s College</strong>, exploring pulsar timing, binary evolution, and high-energy telescope data. Alongside research, I actively <strong>conduct lectures</strong> in physics for both college and high-school students, sharing concepts in ways that make science approachable and engaging.</p>
+    <section class="focus-band" aria-label="Areas of focus">
+      <div class="focus-grid page-width">
+        <div class="focus-intro">
+          <p class="section-label">Areas of focus</p>
+          <p>Physics begins with paying attention.</p>
+        </div>
+        <article class="focus-item"><span class="focus-number">01</span><h2>Pulsar timing</h2></article>
+        <article class="focus-item"><span class="focus-number">02</span><h2>X-ray binaries</h2></article>
+        <article class="focus-item"><span class="focus-number">03</span><h2>Physics education</h2></article>
+      </div>
+    </section>
 
-<p>Beyond research and teaching, I enjoy building small projects (like estimating the Moon’s distance from photos), presenting my work at conferences, and finding creative ways to turn complex data into stories that reveal more about the cosmos.</p>
-     </div>
+    <section class="research-section page-width" id="research" aria-labelledby="research-title">
+      <div class="section-head">
+        <div>
+          <p class="section-label">01 / Selected work</p>
+          <h2 class="section-heading" id="research-title">A closer reading of stellar systems.</h2>
+        </div>
+        <a class="text-link" href="project.html">All work <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+      </div>
+      <article class="research-card">
+        <div class="research-index">01</div>
+        <div class="research-content">
+          <p class="eyebrow">High-energy astrophysics</p>
+          <h2>SXP 5.05</h2>
+          <p>Investigating the Be/X-ray binary system SXP 5.05 through its timing behaviour, outbursts, and high-energy telescope data.</p>
+        </div>
+        <a class="research-link" href="https://ui.adsabs.harvard.edu/search/q=title%3A%22SXP%205.05%22&amp;sort=date%20desc%2C%20bibcode%20desc" target="_blank" rel="noopener noreferrer">View research <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+      </article>
+    </section>
+
+    <section class="about-section page-width" id="about" aria-labelledby="about-title">
+      <div class="about-layout">
+        <div>
+          <p class="section-label">02 / About</p>
+          <h2 id="about-title">Curiosity is<br><em>a method.</em></h2>
+        </div>
+        <div class="about-copy">
+          <p><strong>Hi, I’m Rajapandi Nadar.</strong> I’m a physics researcher and teacher from Mumbai, fascinated by cosmic clocks, stellar explosions, and the stories data can tell when we ask better questions.</p>
+          <p>I have worked on pulsar timing, binary evolution, and high-energy telescope data at TIFR and St. Xavier’s College. Alongside research, I conduct physics lectures for college and high-school students.</p>
+          <a class="text-link" href="about.html">More about me <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-banner page-width" aria-labelledby="contact-title">
+      <div>
+        <p class="kicker"><span></span> Have a question?</p>
+        <h2 id="contact-title">Let’s talk about<br><em>the universe.</em></h2>
+      </div>
+      <a class="button button-light" href="contact.html">Get in touch <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+    </section>
+  </main>
+
+  <footer class="site-footer page-width">
+    <p>© <span data-current-year>2026</span> Rajapandi Nadar</p>
+    <div class="footer-socials" aria-label="Social links">
+      <a href="https://github.com/rajas-code" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
+      <a href="https://orcid.org/0009-0006-9067-1132" target="_blank" rel="noopener noreferrer" aria-label="ORCID"><i class="fa-brands fa-orcid" aria-hidden="true"></i></a>
+      <a href="https://www.linkedin.com/in/rajapandi-nadar" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+      <a href="https://rajapandi01.blogspot.com/" target="_blank" rel="noopener noreferrer" aria-label="Blog"><i class="fa-solid fa-blog" aria-hidden="true"></i></a>
     </div>
-  </section>
-
-
-
-<!-- Contact Section -->
-<section id="contact">
-  <h2>Contact Me</h2>
-  <div class="contact-details">
-    <p>Email: 
-      <a href="mailto:rajapandi.nadar@xaviers.edu.in">rajapandi.nadar@xaviers.edu.in</a>
-    </p>
-    <p>LinkedIn: 
-      <a href="https://www.linkedin.com/in/rajapandi-nadar" target="_blank">linkedin</a>
-    </p>
-  </div>
-</section>
-
-  <!-- Footer -->
-  <footer>
-    <p>© 2025 Rajapandi | Built with HTML JAVA CSS</p>
+    <p>Built with curiosity.</p>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>
